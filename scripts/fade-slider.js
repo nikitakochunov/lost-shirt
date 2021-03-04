@@ -1,6 +1,6 @@
 (function() {
-    const slides = document.querySelectorAll(".fade-slider__item")
-    const activeClass = "fade-slider__item--visible"
+    const slides = document.querySelectorAll(".fade-slider__item");
+    const activeClass = "fade-slider__item--visible";
 
     let index = 0;
 
