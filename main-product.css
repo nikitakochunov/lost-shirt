@@ -12,11 +12,17 @@
     --black: #1b1b1b;
     --red: #d82727;
     --titlesFont: 'Yanone Kaffeesatz', Arial, sans-serif;
+    --forLine: #e0d9c8;
+    --forBG: #fcf5e6;
 }
 
 html, body {
     height: 100%;
 }
+
+a.disabled {
+    pointer-events: none;
+  }
 
 .wrapper {
     overflow: hidden;
@@ -30,6 +36,11 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background:#fcf5e6;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
 }
 
 ul {
@@ -54,7 +65,7 @@ ul > li {
     margin: 0 auto;
     justify-content: space-around;
     height: 100%;
-    box-sizing: border-box;
+    
 }
 
 .logo {
@@ -63,42 +74,72 @@ ul > li {
 
 .fade-slider {
     width: 520px;
-    
+    position: relative;
     
 }
 
 .fade-slider__item {
     background: url(./img/decor/header-guys.png) center -25px / cover no-repeat;
     background-size: 450px;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
     
     
     
+}
+
+.fade-slider__text {
+    position: absolute;
+    
+    opacity: 0;
+}
+
+.fade-slider__text--version-1 {
+    position: absolute;
+    left: -2%;
+    top: 15%;
     
 }
 
-.fade-slider-text {
+.fade-slider__text--version-2 {
+    position: absolute;
+    left: -10%;
+    top: 20%;
     
-
 }
+
+.fade-slider__text--version-2 .lined-text {
+    align-items: center;
+    
+}
+
 
 .lined-text {
     
     margin: 0;
-    font-size: 30px;
+    font-size: 28px;
     text-transform: uppercase;
     font-family: 'alegreya';
-    line-height: 1.15;
-    opacity: 0;
+    line-height: 1;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     
 }
 
-.lined-text--visible {
+
+
+.fade-slider__text--visible {
     opacity: 1;
 }
 
 .lined-text__word {
-    padding: 3px 10px;
+    padding: 1px 5px;
     background: var(--black);
     color: #fff;
 }
@@ -108,12 +149,12 @@ ul > li {
 }
 
 .lined-text__word:nth-child(2n) {
-    margin-left: 8px;
+    margin-left: 4px;
     
 }
 .lined-text__word:nth-child(2n-1) {
     
-    padding-left: 11px;
+    padding-left: 8px;
 }
 
 .mail {
@@ -138,4 +179,207 @@ ul > li {
     color: var(--yellow);
     padding: 8px 40px;
     
+}
+
+.product {
+    margin-bottom: 95px;
+}
+
+.product__item {
+    background: var(--yellow);
+    width: 1100px;
+    height: 670px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.product__item-pic {
+    background: url(./img/tshirts/tshirt_07.png) center center / contain no-repeat;
+    height: 65%;
+    width: 48%;
+}
+
+.product__item-info {
+    width: 555px;
+    height: 650px;
+    margin: 10px 10px 10px 0;
+    background:#fcf5e6;
+    
+}
+
+
+.head {
+    font: inherit;
+    padding: 30px 30px 28px 30px;
+    border-bottom: solid 1px var(--forLine); 
+    
+}
+
+.head__model {
+    font: 62px;
+    color: #fcba2e;
+    margin-bottom: 4px;
+    margin-top: 0px;
+}
+
+.head__collection {
+    font: 47px var(--titlesFont);
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.head__price {
+    background-color: var(--yellow);
+    height: 45px;
+    width: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price {
+    font-family: var(--titlesFont);
+    margin: 0;
+    font-weight: bold;
+    font-size: 39px;
+}
+
+.desc {
+    
+    padding: 30px 30px 28px 30px;
+    border-bottom: solid 1px var(--forLine);
+
+    
+}
+
+.desc__text {
+    font-size: 14px;
+    font-family: "Roboto";
+    color: var(--black);
+    
+}
+
+.desc__text-str {
+    margin-bottom: 13px;
+}
+
+.desc__text-str:last-child {
+    margin-bottom: 0px;
+}
+
+.buy {
+    
+    padding: 30px;
+    
+    
+}
+
+.buy__sizes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 28px;
+}
+
+.size {
+    height: 50px;
+    width: 50px;
+    border: solid 2px var(--forLine);
+    position: relative;
+}
+
+.size__link {
+    
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--black);
+    font-family: "Roboto";
+    font-weight: bold;
+    padding: 15px;
+    
+}
+
+.size--not-available .size__link {
+    color: var(--forLine);
+}
+
+.size--active {
+    background: var(--yellow);
+    border: solid 2px var(--yellow);
+}
+
+.btn {
+    text-decoration: none;
+}
+
+.buy__colors {
+    display: flex;
+    margin-left: 6px;
+    margin-bottom: 28px;
+}
+
+.color {
+    background: var(--forBG);
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+}
+
+.color:last-child {
+    margin-right: 0;
+}
+
+.color--white {
+    height: 21px;
+    width: 21px;
+    border: solid 2px var(--forLine);
+}
+
+.color--black {
+    background: #2f2c25;
+}
+
+
+.color--green {
+    background: #529029;
+}
+
+.color--blue {
+    background: #39498d;
+}
+
+.color--red {
+    background: #d82727;
+}
+
+.color__link {
+    display: flex;
+    
+    padding: 12.5px;
+}
+
+.color--white .color__link {
+    padding: 10px;
+}
+
+.btn {
+    background: var(--black);
+    padding: 10px 65px;
+    line-height: 1;
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-size: 28px;
+    font-family: var(--titlesFont);
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: var(--red);
+    color: #fff;
 }
