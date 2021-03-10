@@ -26,6 +26,7 @@
                 <ul class="fade-slider">
                     <li class="fade-slider__item ">
                         <div class="fade-slider__text fade-slider__text--version-1 fade-slider__text--visible">
+
                             <h1 class="lined-text">
                                 <span class="lined-text__word">Три</span>
                                 <span class="lined-text__word">Футболки</span>
@@ -36,7 +37,7 @@
                         </div>
                         <div class="fade-slider__text fade-slider__text--version-2 ">
                             
-                            <h1 class="lined-text lined-text ">
+                            <h1 class="lined-text">
                                 
                                 <span class="lined-text__word">Футболки<br></span>
                                 <span class="lined-text__word lined-text__word--color-yellow">С любимыми<br></span>
@@ -56,9 +57,25 @@
         <section class="product">
             <div class="container">
                 <div class="product__item">
-                    <div class="product__item-pic">
+                    <ul class="product__item-pic">
+                        <li class="pic__item pic__item--black pic__item--active black">
+                            <div class="pic-black"></div>
+                        </li>
+                        <li class="pic__item pic__item--white white">
+                            <div class="pic-white"></div>
+                        </li>
+                        <li class="pic__item pic__item--green green">
+                            <div class="pic-green"></div>
+                        </li>
+                        <li class="pic__item pic__item--blue blue">
+                            <div class="pic-blue"></div>
+                        </li>
+                        <li class="pic__item pic__item--red red">
+                            <div class="pic-red"></div>
+                        </li>
                         
-                    </div>
+                        
+                    </ul>
                     <div class="product__item-info">
 
                         <div class="head">
@@ -107,20 +124,28 @@
                                 </li>
                                
                             </ul>
+                            
                             <ul class="buy__colors">
-                                <li class="color color--black ">
+
+                                <li data-filter="black" class="color color--black color--active">
+                                    
+                                    <a href="#" class="color__link"></a>
+                                    
+                                </li>
+                                <li data-filter="white" class="color color--white">
+                                    
                                     <a href="#" class="color__link"></a>
                                 </li>
-                                <li class="color color--white">
+                                <li data-filter="green" class="color color--green">
+                                    
                                     <a href="#" class="color__link"></a>
                                 </li>
-                                <li class="color color--green">
+                                <li data-filter="blue" class="color color--blue">
+                                    
                                     <a href="#" class="color__link"></a>
                                 </li>
-                                <li class="color color--blue">
-                                    <a href="#" class="color__link"></a>
-                                </li>
-                                <li class="color color--red">
+                                <li data-filter="red" class="color color--red">
+                                    
                                     <a href="#" class="color__link"></a>
                                 </li>
                             </ul>
@@ -128,10 +153,81 @@
                                 <a href="#" class="btn">Купить</a>
                             </div>
 
-                        </div></div>
+                        </div>
                         
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="information">
+            <div class="container">
+                <div class="block">
+                    <div class="tabs">
+                        <ul class="tabs__block">
+                            <li class="tab__item tab__item--active">
+                                <a href="#" class="tab__link">Описание</a>
+                            </li>
+                            <li class="tab__item">
+                                <a href="#" class="tab__link">Таблица размеров</a>
+                            </li>
+                            <li class="tab__item">
+                                <a href="#" class="tab__link">Условия доставки</a>
+                            </li>
+                            <li class="tab__item">
+                                <a href="#" class="tab__link">О бренде</a>
+                            </li>
+                        </ul>
+                    </div>
+                        
+                   
+                    
+                    <div class="content content--visible">
+                        <div class="content__bg">
+                            <ul class="content__recs">
+                                <li class="rec__item">
+                                    <svg class="rec__icon">
+                                        <use xlink:href="./img/icons-sprite.svg#washing_01"></use>>
+                                    </svg>
+                                    <div class="rec-text">Стирать при температуре 30°С</div>
+                                </li>
+                                <li class="rec__item">
+                                    <svg class="rec__icon">
+                                        <use xlink:href="./img/icons-sprite.svg#washing_02"></use>>
+                                    </svg>
+                                    <div class="rec-text">Не отбеливать</div>
+                                </li>
+                                <li class="rec__item">
+                                    <svg class="rec__icon rec__icon--style-bad-size">
+                                        <use xlink:href="./img/icons-sprite.svg#washing_03"></use>>
+                                    </svg>
+                                    <div class="rec-text">Гладить теплым утюгом<br>с внутренней стороны</div>
+                                </li>
+                                <li class="rec__item">
+                                    <svg class="rec__icon">
+                                        <use xlink:href="./img/icons-sprite.svg#washing_04"></use>>
+                                    </svg>
+                                    <div class="rec-text">Не подвергать химической чистке</div>
+                                </li>
+                                <li class="rec__item">
+                                    <svg class="rec__icon">
+                                        <use xlink:href="./img/icons-sprite.svg#washing_05"></use>>
+                                    </svg>
+                                    <div class="rec-text">Не сушить в барабане</div>
+                                </li>
+                            </ul>
+                            <div class="content__desc">
+                                <div class="desc-text">
+                                    Футболка из приятной ткани с качественным принтом, это одна из самых универсальных вещей
+                                    в гардеробе. Она подойдет и для занятий спортом, и для прогулок, и для работы, если разрешен 
+                                    свободный дресс-код.
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+               
             </div>
         </section>
     </div>

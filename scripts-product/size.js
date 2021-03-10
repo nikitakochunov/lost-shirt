@@ -17,12 +17,12 @@
             sizes.forEach(function(link){
                 link.closest('.size').classList.remove(activeClass);
             })
-            const filterName = size.getAttribute("class");
+            
         
 
-        if (filterName != 'size size--not-available'){
+        
             size.closest('.size').classList.add(activeClass);
-        }
+        
             
         })
     })

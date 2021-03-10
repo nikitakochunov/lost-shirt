@@ -41,6 +41,7 @@ body {
 .container {
     display: flex;
     justify-content: center;
+    
 }
 
 ul {
@@ -94,8 +95,8 @@ ul > li {
 
 .fade-slider__text {
     position: absolute;
-    
     opacity: 0;
+    transition: opacity .5s;
 }
 
 .fade-slider__text--version-1 {
@@ -136,6 +137,7 @@ ul > li {
 
 .fade-slider__text--visible {
     opacity: 1;
+    transition: opacity .5s;
 }
 
 .lined-text__word {
@@ -196,10 +198,50 @@ ul > li {
 }
 
 .product__item-pic {
-    background: url(./img/tshirts/tshirt_07.png) center center / contain no-repeat;
     height: 65%;
     width: 48%;
+    position: relative;
 }
+
+.pic__item {
+    
+    position: absolute;
+    
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.pic__item--active {
+    opacity: 1;
+}
+
+.pic__item--black {
+    background: url(./img/tshirts/tshirt_07.png) center center / contain no-repeat;
+    background-size: 480px;
+}
+
+.pic__item--white {
+    background: url(./img/tshirts/tshirt_08.png) center center / contain no-repeat;
+    background-size: 480px;
+}
+
+.pic__item--green {
+    background: url(./img/tshirts/tshirt_09.png) center center / contain no-repeat;
+    background-size: 480px;
+}
+
+.pic__item--blue {
+    background: url(./img/tshirts/tshirt_10.png) center center / contain no-repeat;
+    background-size: 480px;
+}
+
+.pic__item--red {
+    background: url(./img/tshirts/tshirt_11.png) center center / contain no-repeat;
+    background-size: 480px;
+}
+
+
 
 .product__item-info {
     width: 555px;
@@ -260,6 +302,7 @@ ul > li {
     font-size: 14px;
     font-family: "Roboto";
     color: var(--black);
+    
     
 }
 
@@ -329,17 +372,42 @@ ul > li {
     height: 25px;
     width: 25px;
     margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+
 
 .color:last-child {
     margin-right: 0;
 }
+
+
+
+.color--active:before {
+    
+    content:'';
+    position: absolute;
+    border-radius: 50%;
+    height: 29px;
+    width: 29px;
+    border: solid 3px var(--yellow);
+}
+
 
 .color--white {
     height: 21px;
     width: 21px;
     border: solid 2px var(--forLine);
 }
+
+/*.color--active.color--white {
+    border: 0px;
+    height: 25px;
+    width: 25px;
+}*/
 
 .color--black {
     background: #2f2c25;
@@ -382,4 +450,100 @@ ul > li {
 .btn:hover {
     background: var(--red);
     color: #fff;
+}
+
+
+
+.information {
+    margin-bottom: 80px;
+}
+
+.tabs {
+    
+}
+
+.tabs__block {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.tab__item {
+    margin-right: 67px;
+}
+
+.tab__item:last-child {
+    margin-right: 0;
+}
+
+.tab__link {
+    text-decoration: none;
+    color: var(--black);
+    font-family: var(--titlesFont);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.content {
+    width: 1100px;
+    height: 300px;
+    padding: 10px;
+    background-color: var(--yellow);
+    box-sizing: border-box;
+}
+
+.content__bg {
+    height: 100%;
+    width: 100%;
+    background-color: var(--forBG);
+    display: flex;
+}
+
+.content__recs {
+    width: 340px;
+    padding: 40px 35px 40px 40px;
+    box-sizing: border-box;
+    border-right: solid 2px var(--forLine);
+}
+
+.rec__item {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.rec__item:last-child {
+    margin-bottom: 0;
+}
+
+.rec__icon {
+    height: 24px;
+    width: 24px;
+    margin-right: 22px;
+    display: block;
+}
+
+.rec__icon--style-bad-size {
+
+}
+
+.rec-text {
+    font-size: 13.15px;
+    font-family: 'Roboto';
+    color: var(--black);
+    
+}
+
+.content__desc {
+    box-sizing: border-box;
+    width: 740px;
+    padding: 40px 87px 0px 50px;
+}
+
+.desc-text {
+    font-size: 13.15px;
+    font-family: 'Roboto';
+    color: var(--black);
+    
 }
