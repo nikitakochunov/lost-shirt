@@ -165,16 +165,16 @@
                 <div class="block">
                     <div class="tabs">
                         <ul class="tabs__block">
-                            <li class="tab__item tab__item--active">
+                            <li data-filter="describtion" class="tab__item tab__item--active">
                                 <a href="#" class="tab__link">Описание</a>
                             </li>
-                            <li class="tab__item">
+                            <li data-filter="table-sizes" class="tab__item">
                                 <a href="#" class="tab__link">Таблица размеров</a>
                             </li>
-                            <li class="tab__item">
+                            <li data-filter="delivery" class="tab__item">
                                 <a href="#" class="tab__link">Условия доставки</a>
                             </li>
-                            <li class="tab__item">
+                            <li data-filter="about-brand" class="tab__item ">
                                 <a href="#" class="tab__link">О бренде</a>
                             </li>
                         </ul>
@@ -182,7 +182,7 @@
                         
                    
                     
-                    <div class="content content--visible">
+                    <div class="content describtion content--visible">
                         <div class="content__bg">
                             <ul class="content__recs">
                                 <li class="rec__item">
@@ -223,9 +223,184 @@
                                     свободный дресс-код.
                                 </div>
                             </div>
-    
                         </div>
                     </div>
+
+                    <div class="content content--height-455 table-sizes">
+                        <div class="content__bg">
+                            <div class="content__measure">
+                                <div class="measure__pic">
+                                    <div class="measure__pic-item"></div>
+                                </div>
+                                <div class="measure__recs">
+                                    <ol class="recs__text">
+                                        <li class="text__item">
+                                            Измерьте ширину, см.<br>
+                                            (от подмышки до подмышки)
+                                        </li>
+                                        <li class="text__item">
+                                            Измерьте длину, см.<br>
+                                            (от верхней точки плеча до низа)
+                                        </li>
+                                        <li class="text__item">
+                                            Сверьте данные с таблицей
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="content__sizes">
+                                <table class="content__sizes-table">
+                                    <tr class='table__title'>
+                                        <td>Мужские</td>
+                                        <th></th>
+                                        <th>XS</th>
+                                        <th>S</th>
+                                        <th>M</th>
+                                        <th>L</th>
+                                        <th>XL</th>
+                                        <th>2XL</th>
+                                        <th>3XL</th>
+                            
+                                    </tr>
+                                    <tr>
+                                        <td>Размер RUS</td>
+                                        <th></th>
+                                        <th>44</th>
+                                        <th>46</th>
+                                        <th>48</th>
+                                        <th>50</th>
+                                        <th>52</th>
+                                        <th>54</th>
+                                        <th>56</th>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Ширина, см.</td>
+                                        <th></th>
+                                        <th>46</th>
+                                        <th>48</th>
+                                        <th>50</th>
+                                        <th>52</th>
+                                        <th>54</th>
+                                        <th>56</th>
+                                        <th>58</th>
+                                    </tr>
+                                    <tr>
+                                        
+                                        <td>Длина, см.</td>
+                                        <th></th>
+                                        <th>65</th>
+                                        <th>67</th>
+                                        <th>68</th>
+                                        <th>71</th>
+                                        <th>74</th>
+                                        <th>74</th>
+                                        <th>74</th>
+                                    </tr>
+                                    <tr class='table__title'>
+                                        <td>Женские</td>
+                                        <th>XXS</th>
+                                        <th>XS</th>
+                                        <th>S</th>
+                                        <th>M</th>
+                                        <th>L</th>
+                                        <th>XL</th>
+                                        <th>2XL</th>
+                                        <th>3XL</th>
+                            
+                                    </tr>
+                                    <tr>
+                                        <td>Размер RUS</td>
+                                        <th>36-38</th>
+                                        <th>38-40</th>
+                                        <th>40-42</th>
+                                        <th>42-44</th>
+                                        <th>44-46</th>
+                                        <th>46-48</th>
+                                        <th>48-50</th>
+                                        <th>50-52</th>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Ширина, см.</td>
+                                        <th>38</th>
+                                        <th>40</th>
+                                        <th>42</th>
+                                        <th>44</th>
+                                        <th>46</th>
+                                        <th>48</th>
+                                        <th>50</th>
+                                        <th>52</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Длина, см.</td>
+                                        <th>61</th>
+                                        <th>61</th>
+                                        <th>62</th>
+                                        <th>64</th>
+                                        <th>64</th>
+                                        <th>64</th>
+                                        <th>64</th>
+                                        <th>64</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Обхват груди, см.</td>
+                                        <th>68-76</th>
+                                        <th>76-80</th>
+                                        <th>80-84</th>
+                                        <th>84-88</th>
+                                        <th>88-92</th>
+                                        <th>92-96</th>
+                                        <th>96-100</th>
+                                        <th>100-104</th>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content content--height-280 delivery">
+                        <div class="content__bg">
+                            <div class="content__logo content__logo--1">
+                                <div class="logo-pic logo-pic--1"></div>
+                            </div>
+                            <div class="content__desc content__desc--padding">
+                                <div class="desc-text desc-text--size">
+                                    <div class="text-word">
+                                        Доставка по России и странам Ближнего Зарубежья (Украина, Белоруссия, Молдавия, Польша,<br>
+                                        Эстония, Болгария, Румыния, Чехия, Словакия, Венгрия и т.д.), всего 400 руб.
+                                    </div>
+                                    <div class="text-word">
+                                        Мы так же доставляем в США, Японию, Австралию, Англию, Италию, Испанию и т.д.,<br>
+                                        стоимость доставки около 600 руб.
+                                    </div>
+                                    <div class="text-word">
+                                        (Цена приведена для ориентира и может отличаться в зависимости от дальности и веса посылки)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="content content--height-280 about-brand ">
+                        <div class="content__bg">
+                            <div class="content__logo content__logo--2">
+                                <div class="logo-pic logo-pic--2"></div>
+                            </div>
+                            <div class="content__desc content__desc--padding">
+                                <div class="desc-text desc-text--size">
+                                    Марка Hurley основана на любви к океану с его постоянством в этом изменчивом мире.<br>
+                                    Она осуществляет мечты молодого поколения, сочетая музыку и искусство в дизайне одежды,<br>
+                                    обуви и аксессуаров. Наполненная духом пляжной культуры продукция Hurley предлагает новое<br>
+                                    восприятие комфорта и индивидуальности. Hurley выбирает только тот, кто страстно влюблён<br>
+                                    в свободу.                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                
             </div>
@@ -235,7 +410,7 @@
     <script src="scripts-product/slider.js"></script>
     <script src="scripts-product/size.js"></script>
     <script src="scripts-product/color.js"></script>
-
+    <script src="scripts-product/tabs.js"></script>
 </body>
 
 </html>

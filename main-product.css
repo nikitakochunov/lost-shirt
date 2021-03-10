@@ -485,12 +485,25 @@ ul > li {
     font-size: 22px;
 }
 
+.tab__item--active .tab__link {
+    background: var(--black);
+    color: var(--yellow);
+    padding: 8px 20px;
+    box-sizing: border-box;
+}
+
 .content {
     width: 1100px;
     height: 300px;
     padding: 10px;
     background-color: var(--yellow);
     box-sizing: border-box;
+    display: none;
+    
+}
+
+.content--visible {
+    display: block;
 }
 
 .content__bg {
@@ -537,7 +550,7 @@ ul > li {
 
 .content__desc {
     box-sizing: border-box;
-    width: 740px;
+    width: 743px;
     padding: 40px 87px 0px 50px;
 }
 
@@ -546,4 +559,136 @@ ul > li {
     font-family: 'Roboto';
     color: var(--black);
     
+}
+
+.content--height-455 {
+    height: 455px;
+}
+
+.content__measure {
+    padding: 45px 60px 50px 50px;
+    height: 435px;
+    width: 337px;
+    box-sizing: border-box;
+}
+
+.measure__pic {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.measure__pic-item {
+    height: 100%;
+    width: 100%;
+    background-size: 450px;
+    background: url(./img/tshirts/tshirt_00.png) center center / contain no-repeat;
+    position: absolute;
+    left: -6px;
+    top: -16px;
+}
+
+
+
+ol {
+  padding-left: 14px;
+  margin: 0;  
+}
+
+.text__item {
+    font-size: 12px;
+    font-family: 'Roboto';
+    padding-left: 10px;
+}
+
+.content__sizes {
+    height: 435px;
+    width: 743px;
+}
+
+.content__sizes-table {
+    height: 100%;
+    width: 100%;
+    background-color: var(--forLine);
+    border-spacing: 1px;
+}
+
+td, th {
+    background-color: var(--forBG);
+    font-size: 12px;
+    font-weight: normal;
+}
+
+td {
+    padding-left: 15px;
+}
+
+th {
+    width: 71px;
+}
+
+.table__title  td, .table__title th{
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #f6efe0;
+}
+
+.content--height-280
+{
+    height: 280px;
+}
+
+.content__logo {
+    width: 337px;
+    position: relative;
+    box-sizing: border-box;
+    border-right: solid 2px var(--forLine);
+}
+
+.content__logo--1 {
+    
+    padding-top: 42px;
+    padding-left: 75px;
+    
+    
+}
+.content__logo--2 {
+    padding: 50px 50px 0px 50px;
+}
+
+.logo-pic {
+    position: absolute;
+}
+
+.logo-pic--1 {
+    
+    height: 60%;
+    width: 52%;
+    background: url(./img/content/logos/express.png) center center / contain no-repeat;
+}
+
+.logo-pic--2 {
+    top: 42px;
+    height: 23%;
+    width: 70%;
+    background: url(./img/content/logos/harley.png) center center / contain no-repeat;
+}
+
+.content__desc--padding {
+    padding-right: 50px;
+}
+
+.desc-text--size {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.text-word {
+    margin-bottom: 12px;
+    font-family: 'Roboto';
+}
+
+.text-word:last-child {
+    margin-bottom: 0;
 }
