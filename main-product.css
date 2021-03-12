@@ -692,3 +692,154 @@ th {
 .text-word:last-child {
     margin-bottom: 0;
 }
+
+.footer {
+    margin-bottom: 120px;
+}
+
+.site-menu {
+    width: 1100px;
+}
+
+.site-menu__sections {
+    display: flex;
+    
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/*.site-menu__col:nth-child(1) {
+    margin-right: 175px;
+}
+
+.site-menu__col:nth-child(2) {
+    margin-right: 200px;
+}
+
+.site-menu__col:nth-child(3) {
+    margin-right: 195px;
+}*/
+
+.site-menu__title {
+    color: var(--black);
+    font-family: var(--titlesFont);
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+
+
+.site-menu__item {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.site-menu__item:last-child {
+    margin-bottom: 0;
+}
+
+.site-menu__list--contact .site-menu__item {
+    margin-bottom: 7px;
+}
+
+.site-menu__list--contact .site-menu__item:first-child {
+    margin-bottom: 43px;
+}
+
+.site-menu__list--contact .site-menu__item:last-child {
+    margin-bottom: 0px;
+}
+
+
+.site-menu__link {
+    text-decoration: none;
+    color: #737373;
+    
+}
+
+.site-menu__link:hover {
+    color: var(--red);
+}
+
+.site-menu__link--mail {
+    color: var(--black);
+    
+}
+
+.site-menu__link--mail:hover {
+    color: var(--black);
+}
+
+.extras {
+    margin-bottom: 87px;
+}
+
+.extras__sections {
+    display: flex;
+    justify-content: center;   
+}
+
+.extras__col {
+    
+    width: 535px;
+    height: 190px;
+    margin-right: 30px;
+    box-sizing: border-box;
+    background-color: var(--black);
+    
+}
+
+.extras__col:last-child {
+    margin-right: 0;
+}
+
+.extras__best {
+    
+    color: #fff;
+    font-family: var(--titlesFont);
+    text-transform: uppercase;
+    font-size: 47px;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 48px 10%;
+    display: block;
+}
+
+.extras__col-socials {
+    background: url(./img/bg/pattern.png) center center / 500px;
+    height: 100%;
+    width: 100%;
+}
+
+.socials__list {
+    display: flex;
+    justify-content: center;
+    padding: 73px;
+}
+
+.socials__item {
+    margin-right: 47px;
+}
+
+.socials__item:last-child {
+    margin-right: 0px;
+}
+
+.socials__icon {
+    width: 100%;
+    height: 100%;
+}
+
+.socials__link {
+    width: 38px;
+    height: 38px;
+    display: block;
+}
+
+.socials__link:hover .socials__icon {
+    fill: var(--red);
+}
